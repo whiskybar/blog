@@ -6,9 +6,9 @@
   <meta name="description" content="Jiri Barton's blog" />
   <meta name="keywords" content="Jiri Barton blog lurkingideas" />
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="/static/js/modernizr-1.5.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">lurking<span class="logo_colour">ideas</span></a></h1>
+          <h1><a href="/">lurking<span class="logo_colour">ideas</span></a></h1>
           <h2>of Jiri Barton</h2>
         </div>
       </div>
@@ -42,14 +42,14 @@
     </header>
     <div id="site_content">
       <div id="sidebar_container">
-        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <img class="paperclip" src="/static/images/paperclip.png" alt="paperclip" />
         <div class="sidebar">
           <h3>Latest News</h3>
           <h4>New Website Launched</h4>
           <h5>January 1st, 2012</h5>
           <p>2012 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
         </div>
-        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <img class="paperclip" src="/static/images/paperclip.png" alt="paperclip" />
         <div class="sidebar">
           <h3>Useful Links</h3>
           <ul>
@@ -59,7 +59,7 @@
             <li><a href="#">Last One</a></li>
           </ul>
         </div>
-        <img class="paperclip" src="images/paperclip.png" alt="paperclip" />
+        <img class="paperclip" src="/static/images/paperclip.png" alt="paperclip" />
         <div class="sidebar">
           <h3>Useless Links</h3>
           <ul>
@@ -73,7 +73,7 @@
       <div class="content">
         {% block posts %}
         {% for post in posts %}
-        <img style="float: left; vertical-align: middle; margin: 0 10px 0 0;" src="images/home.png" alt="home" /><a href="{{ post.slug }}/"><h1 style="margin: 15px 0 0 0;">{{ post.title }}</a></h1>
+        <img style="float: left; vertical-align: middle; margin: 0 10px 0 0;" src="/static/images/home.png" alt="home" /><a href="{{ post.slug }}/"><h1 style="margin: 15px 0 0 0;">{{ post.title }}</a></h1>
         {{ post.summary|rst }} 
         <div><a href="{{ post.slug }}/">Read more...</a></div>
         <p></p>
@@ -82,7 +82,7 @@
       </div>
     </div>
     <div id="scroll">
-      <a title="Scroll to the top" class="top" href="#"><img src="images/top.png" alt="top" /></a>
+      <a title="Scroll to the top" class="top" href="#"><img src="/static/images/top.png" alt="top" /></a>
     </div>
     <footer>
       <p><a href="/">Home</a> | <a href="examples.html">Examples</a> | <a href="page.html">A Page</a> | <a href="another_page.html">Another Page</a> | <a href="contact.php">Contact</a></p>
@@ -90,9 +90,9 @@
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.sooperfish.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('ul.sf-menu').sooperfish();
